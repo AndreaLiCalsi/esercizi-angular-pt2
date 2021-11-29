@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-between align-items-center">
+  <img [src]="inputUser.profilePhotoUrl" id="profilePic">
+  <p><b>{{ inputUser.name }}</b></p>
+  <p><b>{{ inputUser.surname}}</b></p>
+  <p>{{ inputUser.age }}</p>
+  <p>{{ inputUser.address.city }}</p>
+  <button (click)="outputUser.emit(inputUser)">Show Details</button>
+</div>

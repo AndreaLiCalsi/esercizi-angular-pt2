@@ -1,0 +1,6 @@
+<div div class="border p-5 bg-primary">
+  <div *ngFor="let user of inputUsers">
+    <app-user-single [inputUser]="user" (outputUser)="outputUser.emit($event)"></app-user-single>
+  </div>
+</div>
+

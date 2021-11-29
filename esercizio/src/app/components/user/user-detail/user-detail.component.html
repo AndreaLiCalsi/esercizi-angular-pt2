@@ -1,0 +1,16 @@
+<div class="border bg-secondary">
+  <p>Id: {{ inputDetail.id }}</p>
+  <p>Nome: {{ inputDetail.name }}</p>
+  <p>Cognome: {{ inputDetail.surname }}</p>
+  <p>Età: {{ inputDetail.age }}</p>
+  <p>Data di nascita: {{ inputDetail.dateOfBirth }}</p>
+  <p>Città: {{ inputDetail.address.city }}</p>
+  <p>Via: {{ inputDetail.address.street }}</p>
+  <p>Cap: {{ inputDetail.address.postalCode }}</p>
+  <p>Ruolo: {{ inputDetail.role }}</p>
+  <p>Username: {{ inputDetail.username }}</p>
+  <img [src]="inputDetail.profilePhotoUrl" id="profilePic">
+  <p>Sesso: {{ inputDetail.gender }}</p>
+  <button (click)="close.emit()">Close</button>
+</div>
+
